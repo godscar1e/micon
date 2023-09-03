@@ -1,0 +1,32 @@
+{
+    "11111": {
+        "name": "first",
+        "oldprice": 111,
+        "current__price": 11,
+        "image": "/images/IMAGE.png"
+    },
+    "22222": {
+        "name": "sec",
+        "oldprice": 111,
+        "current__price": 11,
+        "image": "/images/IMAGE.png"
+    },
+    "33333": {
+        "name": "3",
+        "oldprice": 111,
+        "current__price": 11,
+        "image": "/images/IMAGE.png"
+    },
+    "44444": {
+        "name": "4",
+        "oldprice": 111,
+        "current__price": 11,
+        "image": "/images/IMAGE.png"
+    },
+    "55555": {
+        "name": "5",
+        "oldprice": 111,
+        "current__price": 11,
+        "image": "/images/IMAGE.png"
+    }
+}

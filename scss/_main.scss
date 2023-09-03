@@ -1,0 +1,224 @@
+@import "vars";
+
+.main {
+    &__container {
+        // padding: 0 20px;
+    }
+
+    .main__topblock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 350px;
+        margin: 15px 0 0 0;
+        padding: 0 85px 0 147px;
+        background: #eeeff1;
+    }
+
+    .topblockbody {
+        text-align: center;
+        &__text {
+            max-width: 711px;
+            width: 100%;
+            margin-top: 65px;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+            color: $mainblack;
+        }
+
+        &__catalog-button {
+            max-width: 350px;
+            width: 100%;
+            height: 30px;
+            color: $mainblack;
+            margin-top: 46px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            border: 1px solid #d9d9d9;
+            background-color: #eeeff1;
+            box-shadow: 3px 3px 3px #33791a;
+            transition: all ease-in-out 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                color: #eeeff1;
+                background-color: $mainblack;
+            }
+        }
+    }
+
+    .bottomblock {
+        .mostpopular {
+            max-width: 960px;
+            width: 100%;
+            margin-top: 30px;
+            &__label {
+                display: flex;
+                justify-content: center;
+            }
+            &__circle {
+                content: "";
+                display: inline-block;
+                border-radius: 50%;
+            }
+
+            .cirle1 {
+                width: 9px;
+                height: 9px;
+                margin: 0 5px 5px 0;
+                align-self: flex-end;
+                background-color: $mainblack;
+            }
+
+            .cirle2 {
+                width: 18px;
+                height: 18px;
+                margin-right: 12px;
+                align-self: center;
+                background-color: $goldcolor;
+            }
+
+            .cirle3 {
+                width: 18px;
+                height: 18px;
+                margin-left: 8px;
+                align-self: center;
+                background-color: #33791a;
+            }
+
+            .cirle4 {
+                width: 9px;
+                height: 9px;
+                margin: 5px 0 0 5px;
+                align-self: flex-start;
+                background-color: #d9d9d9;
+            }
+
+            &__text {
+                color: $mainblack;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+            }
+
+            .swiper {
+                width: 745px;
+                height: 100%;
+                margin-top: 30px;
+                .swiper-wrapper {
+                    display: flex;
+                    max-width: 711px;
+                    width: 100%;
+                    align-items: center;
+
+                    .swiper-slide {
+                        width: 217px;
+                        height: 317px;
+                        border: 1px solid #d9d9d9;
+                        background: #feffff;
+                        cursor: pointer;
+
+                        &__container {
+                            padding: 15px;
+                        }
+                        &_image {
+                        }
+                        &__name {
+                            width: 187px;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        &__oldprice {
+                            margin-top: 15px;
+                            font-family: Rasa;
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: normal;
+                            text-align: right;
+                            text-decoration: line-through;
+                        }
+                        .checkout-btn {
+                            position: relative;
+                            display: flex;
+                            width: 187px;
+                            height: 22px;
+                            color: $mainblack;
+                            border: 1px solid $goldcolor;
+                            transition: all ease-in-out 0.2s;
+
+                            &:hover {
+                                background-color: $mainblack;
+                                color: white;
+                                border-top: 1px solid $mainblack;
+                                border-bottom: 1px solid $mainblack;
+                                border-left: 1px solid $mainblack;
+
+                                > .checkout-btn__price-rect {
+                                    background-color: $maingray;
+                                }
+
+                                > .checkout-btn__cartimg {
+                                    background-image: url("../images/item-cartwht.svg");
+                                }
+                            }
+
+                            &__cartimg {
+                                position: relative;
+                                align-self: center;
+                                margin: 0 29px 0 10px;
+                            }
+
+                            &__label {
+                                align-self: center;
+                                font-family: Inter;
+                                font-size: 12px;
+                                font-weight: 300;
+                                line-height: normal;
+                            }
+
+                            &__price-rect {
+                                position: absolute;
+                                top: -5%;
+                                right: 0;
+                                width: 46px;
+                                height: 110%;
+                                color: #feffff;
+                                text-align: center;
+                                font-family: Rasa;
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: normal;
+                                background-color: $goldcolor;
+                                transition: all ease-in-out 0.2s;
+                            }
+                        }
+                    }
+                }
+                .swiper-button-prev,
+                .swiper-button-next {
+                    background-image: url("../images/swiper-arrow.svg");
+                    width: 7px;
+                    height: 12px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                .swiper-button-next {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
